@@ -10,10 +10,6 @@ export class CommentDecoratorService {
   constructor() {
     this.decorationType = vscode.window.createTextEditorDecorationType({
       isWholeLine: true,
-      textDecoration: 'none; display: none',
-      opacity: '0',
-      color: 'transparent',
-      backgroundColor: 'transparent',
       after: {
         contentText: ''
       },
