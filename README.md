@@ -27,9 +27,12 @@ This extension doesn't contribute any settings yet.
 ## Known Issues
 
 - Inline comments (e.g., `x = 1 # note`) are not hidden in this version
-- The extension only works with Python files
 
 ## Release Notes
+
+### 0.1.1
+
+- Fixed issue with multiline strings / multiline f-strings being incorrectly detected as comments
 
 ### 0.1.0
 
