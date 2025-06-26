@@ -28,20 +28,6 @@ This extension doesn't contribute any settings yet.
 
 - Inline comments (e.g., `x = 1 # note`) are not hidden in this version
 
-## Release Notes
-
-### 0.1.2
-- Ignore single line comments
-- Just fold multiline comments
-- Grammar to find comments is now based on CPython grammar [https://github.com/python/cpython/blob/main/Grammar/python.gram]
-
-### 0.1.1
-
-- Fixed issue with multiline strings / multiline f-strings being incorrectly detected as comments
-
-### 0.1.0
-
-Initial release of Comment Hider Python
 
 ---
 
@@ -53,6 +39,14 @@ Initial release of Comment Hider Python
 npm install
 npm run compile
 ```
+
+## License
+
+This extension is licensed under the [MIT License](LICENSE.md).
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
 
 ### Running Tests
 
