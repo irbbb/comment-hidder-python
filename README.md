@@ -30,6 +30,11 @@ This extension doesn't contribute any settings yet.
 
 ## Release Notes
 
+### 0.1.2
+- Ignore single line comments
+- Just fold multiline comments
+- Grammar to find comments is now based on CPython grammar [https://github.com/python/cpython/blob/main/Grammar/python.gram]
+
 ### 0.1.1
 
 - Fixed issue with multiline strings / multiline f-strings being incorrectly detected as comments

@@ -35,13 +35,9 @@ export class CommentHiderController {
     }
 
     const documentText = editor.document.getText();
-    const singleLineCommentRanges = this.detectionService.detectSingleLineComments(documentText);
     const multiLineCommentRanges = this.detectionService.detectMultiLineComments(documentText);
 
-    // Apply decorations to hide comments
-    this.decoratorService.hideComments(editor, [...singleLineCommentRanges, ...multiLineCommentRanges]);
-    
-    // For multiline comments, we need to fold the text to completely hide the lines
+    //For multiline comments, we need to fold the text to completely hide the lines
     if (multiLineCommentRanges.length > 0) {
       // Use the editor's folding capabilities to hide multiline comment lines
       vscode.commands.executeCommand('editor.fold', {
@@ -63,7 +59,7 @@ export class CommentHiderController {
 
     // Remove decorations
     this.decoratorService.showComments(editor);
-    
+
     // Unfold any folded regions
     vscode.commands.executeCommand('editor.unfoldAll');
   }
