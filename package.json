@@ -2,7 +2,7 @@
   "name": "comment-hider-python",
   "displayName": "Comment Hider Python",
   "description": "Visually hide/show comments in Python files to focus on code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.60.0"
   },
